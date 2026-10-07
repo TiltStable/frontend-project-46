@@ -1,0 +1,64 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "gendiff - a difference calculator for configuration files (Hexlet frontend-project-46)",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "files": [
+    "bin",
+    "src/index.js",
+    "src/cli.js",
+    "src/parsers.js",
+    "src/diffTree.js",
+    "src/utils.js",
+    "src/formatters/index.js",
+    "src/formatters/stylish.js",
+    "src/formatters/plain.js",
+    "src/formatters/json.js",
+    "README.md",
+    "file1.json",
+    "file2.json",
+    "file1.yml",
+    "file2.yml"
+  ],
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "oxlint && oxfmt --ignore-path=.oxfmtignore --check",
+    "lint:fix": "oxfmt && oxlint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiltStable/frontend-project-46.git"
+  },
+  "keywords": [
+    "hexlet",
+    "gendiff",
+    "difference-calculator",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/TiltStable/frontend-project-46/issues"
+  },
+  "homepage": "https://github.com/TiltStable/frontend-project-46#readme",
+  "dependencies": {
+    "commander": "^14.0.3",
+    "js-yaml": "^5.4.3"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^5.0.3",
+    "oxfmt": "^0.70.0",
+    "oxlint": "^1.87.0",
+    "vitest": "^5.0.3"
+  }
+}

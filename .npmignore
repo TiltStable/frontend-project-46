@@ -1,0 +1,11 @@
+.github
+src/**/*.test.js
+vitest.config.js
+*.cast
+MEMORY.md
+Makefile
+.oxlintrc.json
+.oxfmtrc.json
+.oxfmtignore
+.gitattributes
+__fixtures
